@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://c15tw24t3axhb"]
 
+[ext_resource type="Script" uid="uid://b2qwpdwnn3cax" path="res://Scenes/Levels/game_over.gd" id="1_opedl"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_buq0o"]
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="2_chlux"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="2_stgsc"]
+[ext_resource type="Texture2D" uid="uid://cs1oni1pc2jyl" path="res://Assets/Icons/Ashblock.png" id="3_l0mjm"]
+[ext_resource type="Texture2D" uid="uid://c8wqpfq8ynljr" path="res://Assets/BG/Ocean_6/1.png" id="4_stgsc"]
+[ext_resource type="Texture2D" uid="uid://dls4sei04qfou" path="res://Assets/BG/Ocean_6/4.png" id="5_ts6st"]
+[ext_resource type="Texture2D" uid="uid://c6bxk44c2m8yg" path="res://Assets/BG/Ocean_6/2.png" id="6_opedl"]
+[ext_resource type="Texture2D" uid="uid://dodcgamam4lh8" path="res://Assets/BG/Ocean_6/3.png" id="7_w5inm"]
+[ext_resource type="AudioStream" uid="uid://1qxcbepavev2" path="res://Assets/Sound/FX/alphix-game-over-417465.mp3" id="10_w5inm"]
 
 [node name="GameOver" type="Node2D" unique_id=826370530]
+script = ExtResource("1_opedl")
 
 [node name="Title" type="Label" parent="." unique_id=1965507633]
 offset_left = 419.0
@@ -14,22 +23,99 @@ theme = ExtResource("2_chlux")
 theme_override_colors/font_color = Color(0.88235295, 0.18039216, 0.1882353, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 24
+theme_override_fonts/font = ExtResource("2_stgsc")
+theme_override_font_sizes/font_size = 60
 text = "Game Over"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="btnExit" parent="." unique_id=1633606001 instance=ExtResource("2_buq0o")]
-offset_left = 438.0
+[node name="UI" type="Control" parent="." unique_id=186624235]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="btnExit" parent="UI" unique_id=1633606001 instance=ExtResource("2_buq0o")]
+layout_mode = 0
+offset_left = 417.0
 offset_top = 359.0
-offset_right = 564.0
+offset_right = 543.0
 offset_bottom = 413.0
+theme_override_fonts/font = ExtResource("2_stgsc")
 text = "Exit to Menu"
 
-[node name="btnPlay" parent="." unique_id=1146872882 instance=ExtResource("2_buq0o")]
-offset_left = 597.0
+[node name="Ashblock" type="Sprite2D" parent="UI/btnExit" unique_id=2122894718]
+z_index = -1
+position = Vector2(63, 25.000008)
+scale = Vector2(0.18730329, 0.15913205)
+texture = ExtResource("3_l0mjm")
+
+[node name="btnPlay2" parent="UI" unique_id=14027671 instance=ExtResource("2_buq0o")]
+layout_mode = 0
+offset_left = 617.0
 offset_top = 359.0
-offset_right = 723.0
+offset_right = 743.0
 offset_bottom = 413.0
+theme_override_fonts/font = ExtResource("2_stgsc")
 shortcut = null
 text = "Play Again"
+
+[node name="Ashblock2" type="Sprite2D" parent="UI/btnPlay2" unique_id=657089071]
+z_index = -1
+position = Vector2(63.000015, 26)
+scale = Vector2(0.18730329, 0.15913205)
+texture = ExtResource("3_l0mjm")
+
+[node name="BgParalax2" type="Node2D" parent="." unique_id=287290562]
+z_index = -4
+
+[node name="Parallax2D4" type="Parallax2D" parent="BgParalax2" unique_id=474988879]
+repeat_size = Vector2(1180, 0)
+autoscroll = Vector2(-15, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="1" type="Sprite2D" parent="BgParalax2/Parallax2D4" unique_id=1865742241]
+position = Vector2(578, 322)
+scale = Vector2(2.05, 2.153)
+texture = ExtResource("4_stgsc")
+
+[node name="Parallax2D" type="Parallax2D" parent="BgParalax2" unique_id=1714369196]
+scale = Vector2(1.0000001, 1)
+repeat_size = Vector2(1180, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="4" type="Sprite2D" parent="BgParalax2/Parallax2D" unique_id=135041337]
+position = Vector2(578, 322)
+scale = Vector2(2.05, 2.15)
+texture = ExtResource("5_ts6st")
+
+[node name="Parallax2D2" type="Parallax2D" parent="BgParalax2" unique_id=1359785711]
+repeat_size = Vector2(1180, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="2" type="Sprite2D" parent="BgParalax2/Parallax2D2" unique_id=217028323]
+position = Vector2(578, 322)
+scale = Vector2(2.05, 2.15)
+texture = ExtResource("6_opedl")
+
+[node name="Parallax2D3" type="Parallax2D" parent="BgParalax2" unique_id=1012450080]
+repeat_size = Vector2(1180, 0)
+autoscroll = Vector2(-20, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="3" type="Sprite2D" parent="BgParalax2/Parallax2D3" unique_id=1770351463]
+position = Vector2(578, 322)
+scale = Vector2(2.05, 2.15)
+texture = ExtResource("7_w5inm")
+
+[node name="GameoverAudio" type="AudioStreamPlayer" parent="." unique_id=255009640]
+stream = ExtResource("10_w5inm")
+
+[connection signal="pressed" from="UI/btnPlay2" to="." method="_on_btn_play_2_pressed"]
+[connection signal="finished" from="GameoverAudio" to="." method="_on_gameover_audio_finished"]

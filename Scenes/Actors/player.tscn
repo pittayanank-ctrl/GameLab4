@@ -28,7 +28,7 @@ script = ExtResource("1_mqoqv")
 bullet_scene = ExtResource("2_4fuvf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1840880435]
-position = Vector2(2.08165e-12, -33)
+position = Vector2(-0.013648948, -31.999998)
 shape = SubResource("CapsuleShape2D_n4sts")
 
 [node name="ParticleTrails" type="CPUParticles2D" parent="." unique_id=1927645372]
@@ -85,15 +85,17 @@ scale = Vector2(1.0000001, 1.0000001)
 texture = ExtResource("4_wn7ci")
 
 [node name="student" parent="." unique_id=1717188345 instance=ExtResource("4_pdd2n")]
-position = Vector2(-0.9982939, 4.0004263)
+position = Vector2(0.9999924, -0.0004272461)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1467812523]
+offset = Vector2(0, -10)
 limit_smoothed = true
 position_smoothing_speed = 100.0
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
-drag_top_margin = 0.6
-drag_bottom_margin = 0.4
+drag_left_margin = 0.0
+drag_right_margin = 0.0
+drag_bottom_margin = 0.1
 editor_draw_limits = true
 editor_draw_drag_margin = true
 

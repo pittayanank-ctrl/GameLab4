@@ -2,66 +2,57 @@
 
 [ext_resource type="PackedScene" uid="uid://d27bcsmx82vfa" path="res://Scenes/Actors/enemy.tscn" id="1_b7voo"]
 [ext_resource type="Script" uid="uid://bx5lotsye1r4s" path="res://Scenes/Actors/monster_small.gd" id="2_a8voy"]
-[ext_resource type="Texture2D" uid="uid://dv87lp4aq8wj3" path="res://Assets/Spritesheet/Slime1_Walk_without_shadow.png" id="4_l5hy0"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ynp2i"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(0, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wil0m"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(64, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_225wo"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(128, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q0esp"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(192, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3umna"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(256, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3fnnt"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(320, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_40jp4"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(384, 127, 64, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_8m1sm"]
-atlas = ExtResource("4_l5hy0")
-region = Rect2(448, 127, 64, 42)
+[ext_resource type="Texture2D" uid="uid://cvxdt82t03val" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_000.png" id="3_i4d51"]
+[ext_resource type="Texture2D" uid="uid://btfkf2btimf3c" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_001.png" id="4_4kvek"]
+[ext_resource type="Texture2D" uid="uid://86oij6y05i70" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_002.png" id="5_l7t21"]
+[ext_resource type="Texture2D" uid="uid://ceb8o2gxdwv1c" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_003.png" id="6_fx8d6"]
+[ext_resource type="Texture2D" uid="uid://dxaqqtxowa62h" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_004.png" id="7_06ehe"]
+[ext_resource type="Texture2D" uid="uid://egla2vri44tj" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_005.png" id="8_d55ix"]
+[ext_resource type="Texture2D" uid="uid://b6cfclaxu3qdj" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_006.png" id="9_jatlv"]
+[ext_resource type="Texture2D" uid="uid://b76ia4chacnou" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_007.png" id="10_bqauc"]
+[ext_resource type="Texture2D" uid="uid://d4sbpjulv4f4" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_008.png" id="11_4nc3x"]
+[ext_resource type="Texture2D" uid="uid://cm3y353o82s7m" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_009.png" id="12_ks7nl"]
+[ext_resource type="Texture2D" uid="uid://cv0pn81owxvsu" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_010.png" id="13_gfo82"]
+[ext_resource type="Texture2D" uid="uid://dclbis1xsqj06" path="res://Assets/Spritesheet/skel/0_Skeleton_Crusader_Run Slashing_011.png" id="14_cicv2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l7ctk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ynp2i")
+"texture": ExtResource("3_i4d51")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_wil0m")
+"texture": ExtResource("4_4kvek")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_225wo")
+"texture": ExtResource("5_l7t21")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q0esp")
+"texture": ExtResource("6_fx8d6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3umna")
+"texture": ExtResource("7_06ehe")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_3fnnt")
+"texture": ExtResource("8_d55ix")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_40jp4")
+"texture": ExtResource("9_jatlv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_8m1sm")
+"texture": ExtResource("10_bqauc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4nc3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ks7nl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gfo82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cicv2")
 }],
 "loop": 1,
 "name": &"slim",
@@ -84,7 +75,7 @@ position = Vector2(0, -1)
 
 [node name="AnimateSprite" type="AnimatedSprite2D" parent="Sprite" index="0" unique_id=87960724]
 position = Vector2(0, -37)
-scale = Vector2(2, 2)
+scale = Vector2(-0.136, 0.13)
 sprite_frames = SubResource("SpriteFrames_l7ctk")
 animation = &"slim"
 

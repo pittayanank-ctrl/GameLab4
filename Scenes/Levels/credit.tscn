@@ -3,8 +3,18 @@
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="1_2g1tp"]
 [ext_resource type="Texture2D" uid="uid://1ay25i0wdihg" path="res://Assets/Icons/cpkku_dark.png" id="2_fnvqj"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="3_fnvqj"]
+[ext_resource type="Texture2D" uid="uid://ckxw8g8wltj44" path="res://Assets/BG/Ocean_5/1.png" id="4_8ilsj"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="4_wwdvx"]
+[ext_resource type="Texture2D" uid="uid://d0tl413mqi1od" path="res://Assets/BG/Ocean_5/2.png" id="5_wwdvx"]
+[ext_resource type="Texture2D" uid="uid://cs1oni1pc2jyl" path="res://Assets/Icons/Ashblock.png" id="5_xg6id"]
+[ext_resource type="Texture2D" uid="uid://bhc0rbjlwn68" path="res://Assets/BG/Ocean_5/3.png" id="6_nd6f0"]
+[ext_resource type="Texture2D" uid="uid://pkwmfu4rf8ng" path="res://Assets/BG/Ocean_5/4.png" id="7_xg6id"]
+[ext_resource type="Texture2D" uid="uid://cgwqyvmahplab" path="res://Assets/Spritesheet/e123124-removebg-preview.png" id="10_a3cjp"]
+
+[sub_resource type="GDScript" id="GDScript_nd6f0"]
 
 [node name="Node2D" type="Node2D" unique_id=264957255]
+script = SubResource("GDScript_nd6f0")
 
 [node name="Control" type="Control" parent="." unique_id=423201679]
 layout_mode = 3
@@ -13,7 +23,7 @@ offset_right = 1154.0
 offset_bottom = 650.0
 
 [node name="CpkkuDark" type="Sprite2D" parent="Control" unique_id=813724852]
-position = Vector2(584, 71)
+position = Vector2(576, 140)
 texture = ExtResource("2_fnvqj")
 
 [node name="Title" type="Label" parent="Control" unique_id=1640205557]
@@ -21,10 +31,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -148.0
-offset_top = 295.0
-offset_right = 153.0
-offset_bottom = 327.0
+offset_left = -153.0
+offset_top = 372.0
+offset_right = 148.0
+offset_bottom = 404.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_colors/font_color = Color(0.88235295, 0.18039216, 0.1882353, 1)
@@ -40,10 +50,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -167.0
-offset_top = 177.0
-offset_right = 207.0
-offset_bottom = 209.0
+offset_left = -185.0
+offset_top = 252.0
+offset_right = 195.0
+offset_bottom = 299.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
@@ -56,17 +66,26 @@ vertical_alignment = 1
 [node name="btnExit" parent="Control" unique_id=1633606001 instance=ExtResource("3_fnvqj")]
 layout_mode = 0
 offset_left = 33.0
+offset_top = 36.0
 offset_right = 159.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("4_wwdvx")
+
+[node name="Ashblock" type="Sprite2D" parent="Control/btnExit" unique_id=1828738606]
+z_index = -1
+position = Vector2(63, 25.000008)
+scale = Vector2(0.18730329, 0.15913205)
+texture = ExtResource("5_xg6id")
 
 [node name="Title3" type="Label" parent="Control" unique_id=1657901293]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -148.0
-offset_top = 129.0
-offset_right = 153.0
-offset_bottom = 161.0
+offset_left = -265.0
+offset_top = 204.0
+offset_right = 285.0
+offset_bottom = 236.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
@@ -80,16 +99,61 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -187.0
-offset_top = 360.0
-offset_right = 193.0
-offset_bottom = 407.0
+offset_left = -161.0
+offset_top = 436.0
+offset_right = 164.0
+offset_bottom = 483.0
 grow_horizontal = 2
 theme = ExtResource("1_2g1tp")
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 16
-text = "1. 
-2.
-3.
-4."
+text = "1. นายพิทยนันท์ กัญญะลา 673380525-8"
 vertical_alignment = 1
+
+[node name="BgParalax" type="Node2D" parent="." unique_id=774903960]
+z_index = -1
+
+[node name="1" type="Sprite2D" parent="BgParalax" unique_id=826284730]
+z_index = -1
+position = Vector2(596, 312.00003)
+scale = Vector2(2.1979167, 2.169753)
+texture = ExtResource("4_8ilsj")
+
+[node name="Parallax2D" type="Parallax2D" parent="BgParalax" unique_id=1865554958]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="2" type="Sprite2D" parent="BgParalax/Parallax2D" unique_id=359481310]
+z_index = -1
+position = Vector2(597.9999, 308)
+scale = Vector2(2.1909719, 2.1790125)
+texture = ExtResource("5_wwdvx")
+
+[node name="Parallax2D2" type="Parallax2D" parent="BgParalax" unique_id=81436697]
+repeat_size = Vector2(1259, 0)
+autoscroll = Vector2(-14, 0)
+repeat_times = 2
+
+[node name="3" type="Sprite2D" parent="BgParalax/Parallax2D2" unique_id=1886350869]
+z_index = -1
+position = Vector2(594, 301)
+scale = Vector2(2.1857638, 2.373457)
+texture = ExtResource("6_nd6f0")
+
+[node name="Parallax2D3" type="Parallax2D" parent="BgParalax" unique_id=1727770282]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-24, 0)
+repeat_times = 2
+
+[node name="4" type="Sprite2D" parent="BgParalax/Parallax2D3" unique_id=1653805138]
+z_index = -1
+position = Vector2(594.99994, 316)
+scale = Vector2(2.2013888, 2.1790123)
+texture = ExtResource("7_xg6id")
+
+[node name="E123124RemovebgPreview" type="Sprite2D" parent="." unique_id=1345180181]
+position = Vector2(218, 446)
+scale = Vector2(0.84444445, 0.6482214)
+texture = ExtResource("10_a3cjp")

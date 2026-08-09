@@ -1,35 +1,112 @@
 [gd_scene format=3 uid="uid://b46lxwc5r3dy4"]
 
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="1_5l1gm"]
+[ext_resource type="Script" uid="uid://mrbkujyxy17l" path="res://Scenes/Levels/game_win.gd" id="1_36kb3"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="2_81byk"]
+[ext_resource type="Texture2D" uid="uid://cs1oni1pc2jyl" path="res://Assets/Icons/Ashblock.png" id="3_sjt84"]
+[ext_resource type="Texture2D" uid="uid://ckxw8g8wltj44" path="res://Assets/BG/Ocean_5/1.png" id="4_ghqlb"]
+[ext_resource type="Texture2D" uid="uid://d0tl413mqi1od" path="res://Assets/BG/Ocean_5/2.png" id="5_36kb3"]
+[ext_resource type="Texture2D" uid="uid://bhc0rbjlwn68" path="res://Assets/BG/Ocean_5/3.png" id="6_7eibk"]
+[ext_resource type="Texture2D" uid="uid://pkwmfu4rf8ng" path="res://Assets/BG/Ocean_5/4.png" id="7_5mbrr"]
+[ext_resource type="AudioStream" uid="uid://dc8lmdqnf3a3e" path="res://Assets/Sound/FX/Gamewin.wav" id="9_36kb3"]
 
 [node name="GameOver" type="Node2D" unique_id=826370530]
+script = ExtResource("1_36kb3")
 
 [node name="Title" type="Label" parent="." unique_id=1965507633]
-offset_left = 438.0
-offset_top = 225.0
-offset_right = 742.0
-offset_bottom = 269.0
+offset_left = 420.0
+offset_top = 224.0
+offset_right = 724.0
+offset_bottom = 268.0
 theme = ExtResource("1_5l1gm")
 theme_override_colors/font_color = Color(0.36862746, 0.9137255, 0.1882353, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 33
+theme_override_font_sizes/font_size = 60
 text = "You Win"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="btnExit" parent="." unique_id=1633606001 instance=ExtResource("2_81byk")]
-offset_left = 438.0
+offset_left = 420.0
 offset_top = 359.0
-offset_right = 564.0
+offset_right = 546.0
 offset_bottom = 413.0
 text = "Exit to Menu"
 
+[node name="Ashblock" type="Sprite2D" parent="btnExit" unique_id=1979089574]
+z_index = -1
+position = Vector2(62.99999, 26.000004)
+scale = Vector2(0.18625394, 0.15551537)
+texture = ExtResource("3_sjt84")
+
 [node name="btnPlay" parent="." unique_id=1146872882 instance=ExtResource("2_81byk")]
-offset_left = 597.0
+offset_left = 640.0
 offset_top = 359.0
-offset_right = 723.0
+offset_right = 766.0
 offset_bottom = 413.0
 shortcut = null
 text = "Play Again"
+
+[node name="Ashblock2" type="Sprite2D" parent="btnPlay" unique_id=1614466449]
+z_index = -1
+position = Vector2(63, 26)
+scale = Vector2(0.18625394, 0.15551537)
+texture = ExtResource("3_sjt84")
+
+[node name="BgParalax" type="Node2D" parent="." unique_id=1107948828]
+z_index = -1
+metadata/_edit_lock_ = true
+
+[node name="1" type="Sprite2D" parent="BgParalax" unique_id=1385185007]
+z_index = -1
+position = Vector2(596, 312.00003)
+scale = Vector2(2.1979167, 2.169753)
+texture = ExtResource("4_ghqlb")
+metadata/_edit_lock_ = true
+
+[node name="Parallax2D" type="Parallax2D" parent="BgParalax" unique_id=1846257661]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+metadata/_edit_lock_ = true
+
+[node name="2" type="Sprite2D" parent="BgParalax/Parallax2D" unique_id=1955135107]
+z_index = -1
+position = Vector2(597.9999, 308)
+scale = Vector2(2.1909719, 2.1790125)
+texture = ExtResource("5_36kb3")
+metadata/_edit_lock_ = true
+
+[node name="Parallax2D2" type="Parallax2D" parent="BgParalax" unique_id=702551430]
+repeat_size = Vector2(1259, 0)
+autoscroll = Vector2(-14, 0)
+repeat_times = 2
+metadata/_edit_lock_ = true
+
+[node name="3" type="Sprite2D" parent="BgParalax/Parallax2D2" unique_id=1990796519]
+z_index = -1
+position = Vector2(594, 301)
+scale = Vector2(2.1857638, 2.373457)
+texture = ExtResource("6_7eibk")
+metadata/_edit_lock_ = true
+
+[node name="Parallax2D3" type="Parallax2D" parent="BgParalax" unique_id=21942610]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-24, 0)
+repeat_times = 2
+metadata/_edit_lock_ = true
+
+[node name="4" type="Sprite2D" parent="BgParalax/Parallax2D3" unique_id=1595808246]
+z_index = -1
+position = Vector2(594.99994, 316)
+scale = Vector2(2.2013888, 2.1790123)
+texture = ExtResource("7_5mbrr")
+metadata/_edit_lock_ = true
+
+[node name="UWinBuiAudio" type="AudioStreamPlayer" parent="." unique_id=730198571]
+stream = ExtResource("9_36kb3")
+volume_db = 8.211
+
+[connection signal="pressed" from="btnPlay" to="." method="_on_btn_play_pressed"]

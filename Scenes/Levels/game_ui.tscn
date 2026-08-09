@@ -9,11 +9,33 @@
 [ext_resource type="Texture2D" uid="uid://ctp5xew3mi5hs" path="res://Assets/Icons/icons8-music-48.png" id="7_r4nak"]
 [ext_resource type="Texture2D" uid="uid://c14r70talvlty" path="res://Assets/Icons/icons8-arrow-left-50.png" id="8_fouhp"]
 [ext_resource type="Texture2D" uid="uid://djscvie6h1kd5" path="res://Assets/Icons/icons8-cancel-48.png" id="8_nvrsl"]
-[ext_resource type="Texture2D" uid="uid://cs52s37v04q41" path="res://Assets/Icons/icons8-heart-48.png" id="9_nvrsl"]
 [ext_resource type="Texture2D" uid="uid://dbdk5x30xx2t4" path="res://Assets/Icons/icons8-up-50.png" id="9_qi3vf"]
+[ext_resource type="Texture2D" uid="uid://dqoralrwkleq0" path="res://Assets/Icons/UI.png" id="10_hpup7"]
 [ext_resource type="Texture2D" uid="uid://m44t4aut6o62" path="res://Assets/Icons/icons8-arrow-right-50.png" id="10_ioybj"]
-[ext_resource type="Texture2D" uid="uid://b7f4d7rpedxw3" path="res://Assets/Spritesheet/WandT2.png" id="13_v4do5"]
+[ext_resource type="Texture2D" uid="uid://b0xwfskfepka0" path="res://Assets/Icons/icons8-heart-482.png" id="10_m1n6k"]
+[ext_resource type="Texture2D" uid="uid://3ql17by0ebco" path="res://Assets/Icons/icons8-heartblack-481234.png" id="11_m1n6k"]
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="14_b47np"]
+[ext_resource type="Texture2D" uid="uid://y345scandtny" path="res://Assets/Icons/Sword.png" id="14_hpup7"]
+[ext_resource type="FontFile" uid="uid://b3ivysmhcn84h" path="res://Assets/Fonts/Kodchasan-Bold.ttf" id="16_p2qnq"]
+[ext_resource type="Texture2D" uid="uid://mqym2qcxnrgl" path="res://Assets/Icons/5cc678ea-4dc9-435f-8216-9bc83efa1e0b.png" id="17_octcl"]
+[ext_resource type="Texture2D" uid="uid://dapm4iyb7dxcp" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_000.png" id="18_lk0wq"]
+[ext_resource type="Texture2D" uid="uid://wpl16rhdqivc" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_001.png" id="19_m1n6k"]
+[ext_resource type="Texture2D" uid="uid://gt2w38h5ypyn" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_002.png" id="20_fhi8p"]
+[ext_resource type="Texture2D" uid="uid://bifhu8xyejxwr" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_003.png" id="21_w15y5"]
+[ext_resource type="Texture2D" uid="uid://civcitoinukl5" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_004.png" id="22_sdujv"]
+[ext_resource type="Texture2D" uid="uid://bl6r2y4njy68g" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_005.png" id="23_atinn"]
+[ext_resource type="Texture2D" uid="uid://dwn1bfem5jgy1" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_006.png" id="24_3bpfb"]
+[ext_resource type="Texture2D" uid="uid://bwtmi1qwup6if" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_007.png" id="25_0uh1u"]
+[ext_resource type="Texture2D" uid="uid://bnk5pums25k1d" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_008.png" id="26_s6bul"]
+[ext_resource type="Texture2D" uid="uid://dkinkxnikhqwn" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_009.png" id="27_g68vh"]
+[ext_resource type="Texture2D" uid="uid://ccis8j2n7yqni" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_010.png" id="28_x506w"]
+[ext_resource type="Texture2D" uid="uid://bp5p0c1bfy7gm" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_011.png" id="29_60qr4"]
+[ext_resource type="Texture2D" uid="uid://386nm1h22bft" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_012.png" id="30_ksv5p"]
+[ext_resource type="Texture2D" uid="uid://c1qxos23tp536" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_013.png" id="31_434yt"]
+[ext_resource type="Texture2D" uid="uid://4lyyj7aprn48" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_014.png" id="32_8o7un"]
+[ext_resource type="Texture2D" uid="uid://84t84dbwvv5q" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_015.png" id="33_1j0p5"]
+[ext_resource type="Texture2D" uid="uid://bbma2df11pi1t" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_016.png" id="34_855qf"]
+[ext_resource type="Texture2D" uid="uid://bsy00tqwxi7tn" path="res://Assets/Spritesheet/FallenAngel/Idle Blinking/0_Fallen_Angels_Idle Blinking_017.png" id="35_f32mj"]
 
 [sub_resource type="Animation" id="Animation_3cagf"]
 length = 0.001
@@ -29,6 +51,68 @@ _data = {
 &"welcome": SubResource("Animation_5vjlm")
 }
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_u1tks"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_lk0wq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_m1n6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_fhi8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_w15y5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_sdujv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_atinn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_3bpfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0uh1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_s6bul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_g68vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_x506w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_60qr4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ksv5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_434yt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_8o7un")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1j0p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_855qf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_f32mj")
+}],
+"loop": 1,
+"name": &"Idle101",
+"speed": 20.0
+}]
+
 [node name="UserInterface" type="CanvasLayer" unique_id=1799764374]
 script = ExtResource("1_6pfiu")
 
@@ -39,7 +123,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_lock_ = true
 
 [node name="TopBar" type="Control" parent="GameUI" unique_id=1540824613]
 unique_name_in_owner = true
@@ -52,15 +135,15 @@ grow_horizontal = 2
 [node name="ScoreLabel" type="Label" parent="GameUI/TopBar" unique_id=1067951808]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 16.0
-offset_top = 63.0
-offset_right = 186.0
-offset_bottom = 105.0
-theme_override_colors/font_color = Color(0.910156, 0.730469, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+offset_left = 184.0
+offset_top = 62.0
+offset_right = 308.0
+offset_bottom = 101.0
+theme_override_colors/font_color = Color(0.76862746, 0.6666667, 0.60784316, 1)
+theme_override_colors/font_outline_color = Color(0.033853278, 0.033853278, 0.033853274, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4yslr")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 30
 text = "Score: 3"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="GameUI/TopBar" unique_id=1609764920]
@@ -69,45 +152,42 @@ autoplay = &"welcome"
 
 [node name="HpRect" type="ColorRect" parent="GameUI/TopBar" unique_id=987609954]
 layout_mode = 0
-offset_left = 279.0
-offset_top = 63.0
-offset_right = 419.0
-offset_bottom = 95.0
+offset_left = 329.0
+offset_top = 69.00001
+offset_right = 415.47757
+offset_bottom = 93.30738
+scale = Vector2(1.7208323, 0.9947879)
+color = Color(0.16078432, 0.14901961, 0.14509805, 1)
 
 [node name="ProgressBar" type="ProgressBar" parent="GameUI/TopBar/HpRect" unique_id=306194423]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 2.0
-offset_top = 2.0
-offset_right = 138.0
-offset_bottom = 30.0
+offset_left = 1.3407383
+offset_top = 2.2097683
+offset_right = 85.80721
+offset_bottom = 23.209768
 theme = ExtResource("4_fjdxc")
-value = 100.0
-metadata/_edit_lock_ = true
-
-[node name="HPLabel" type="Label" parent="GameUI/TopBar" unique_id=2043418135]
-unique_name_in_owner = true
-layout_mode = 0
-offset_left = 216.0
-offset_top = 63.0
-offset_right = 261.0
-offset_bottom = 105.0
-theme_override_colors/font_color = Color(0, 0.7294118, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("3_4yslr")
-theme_override_font_sizes/font_size = 32
-text = "HP"
+theme_override_font_sizes/font_size = 14
+value = 100.0
+
+[node name="5Cc678Ea4Dc9435f82169Bc83Efa1e0b" type="Sprite2D" parent="GameUI/TopBar/HpRect" unique_id=1823555129]
+z_index = -1
+position = Vector2(43.57397, 13.811001)
+scale = Vector2(0.43515158, 0.8882371)
+texture = ExtResource("17_octcl")
+region_enabled = true
+region_rect = Rect2(56.661255, 0, 228.33875, 51)
 
 [node name="btnSave" type="Button" parent="GameUI/TopBar" unique_id=196490803]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -195.0
-offset_top = 5.0
-offset_right = -131.0
-offset_bottom = 63.0
+offset_left = -170.0
+offset_top = 24.0
+offset_right = -112.0
+offset_bottom = 82.0
 grow_horizontal = 0
 focus_mode = 0
 icon = ExtResource("5_fpocv")
@@ -117,10 +197,10 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -255.0
-offset_top = 5.0
-offset_right = -197.0
-offset_bottom = 63.0
+offset_left = -259.0
+offset_top = 25.0
+offset_right = -203.0
+offset_bottom = 79.0
 grow_horizontal = 0
 focus_mode = 0
 
@@ -129,7 +209,6 @@ position = Vector2(32, 29)
 texture = ExtResource("6_da6bi")
 
 [node name="mute" type="Sprite2D" parent="GameUI/TopBar/btnSound" unique_id=1162638177]
-visible = false
 position = Vector2(32, 29)
 texture = ExtResource("7_qwp1t")
 
@@ -138,45 +217,51 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -320.0
-offset_top = 5.0
-offset_right = -257.0
-offset_bottom = 63.0
+offset_left = -353.0
+offset_top = 29.0
+offset_right = -292.0
+offset_bottom = 79.0
 grow_horizontal = 0
 focus_mode = 0
 
 [node name="on" type="Sprite2D" parent="GameUI/TopBar/btnMusic" unique_id=1371475802]
-position = Vector2(5, 5)
+position = Vector2(7, 0)
 texture = ExtResource("7_r4nak")
 centered = false
 
 [node name="mute" type="Sprite2D" parent="GameUI/TopBar/btnMusic" unique_id=2050570364]
-position = Vector2(23, 24.999998)
+position = Vector2(25, 19.999998)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_nvrsl")
 centered = false
 
-[node name="LifeLabel" type="Label" parent="GameUI/TopBar" unique_id=1814812566]
-layout_mode = 0
-offset_left = 216.0
-offset_top = 63.0
-offset_right = 261.0
-offset_bottom = 105.0
-theme_override_colors/font_color = Color(0, 0.7294118, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("3_4yslr")
-theme_override_font_sizes/font_size = 32
-text = "HP"
-
 [node name="LifeRect" type="TextureRect" parent="GameUI/TopBar" unique_id=1631342937]
+z_index = 1
 layout_mode = 0
-offset_left = 16.0
-offset_top = 10.0
-offset_right = 256.0
-offset_bottom = 58.0
-texture = ExtResource("9_nvrsl")
+offset_left = 175.00002
+offset_top = 15.0
+offset_right = 416.34918
+offset_bottom = 63.0
+rotation = -0.010334054
+scale = Vector2(0.9654064, 0.9342463)
+texture = ExtResource("10_m1n6k")
 stretch_mode = 1
+
+[node name="LifeRect2" type="TextureRect" parent="GameUI/TopBar" unique_id=1557795517]
+layout_mode = 0
+offset_left = 175.00002
+offset_top = 15.0
+offset_right = 414.2775
+offset_bottom = 63.0
+scale = Vector2(0.9654064, 0.9342463)
+texture = ExtResource("11_m1n6k")
+stretch_mode = 1
+
+[node name="Ui" type="Sprite2D" parent="GameUI/TopBar" unique_id=2041412013]
+z_index = -1
+position = Vector2(574, 321.99994)
+scale = Vector2(0.8204419, 0.6224677)
+texture = ExtResource("10_hpup7")
 
 [node name="BottomBar" type="ColorRect" parent="GameUI" unique_id=1990197770]
 layout_mode = 1
@@ -191,51 +276,57 @@ color = Color(0, 0.011764706, 0, 0.28235295)
 
 [node name="btnLeft" type="Button" parent="GameUI/BottomBar" unique_id=755149458]
 layout_mode = 0
-offset_left = 32.0
-offset_top = 10.0
-offset_right = 134.0
-offset_bottom = 99.0
+offset_left = 88.0
+offset_top = 12.0
+offset_right = 157.0
+offset_bottom = 76.0
 focus_mode = 0
 icon = ExtResource("8_fouhp")
 flat = true
 
 [node name="btnUp" type="Button" parent="GameUI/BottomBar" unique_id=1894149077]
 layout_mode = 0
-offset_left = 134.0
-offset_right = 237.0
-offset_bottom = 89.0
+offset_left = 207.0
+offset_top = 12.0
+offset_right = 274.0
+offset_bottom = 74.0
 focus_mode = 0
 icon = ExtResource("9_qi3vf")
 flat = true
 
 [node name="btnRight" type="Button" parent="GameUI/BottomBar" unique_id=605126403]
 layout_mode = 0
-offset_left = 237.0
-offset_top = 10.0
-offset_right = 340.0
-offset_bottom = 99.0
+offset_left = 318.0
+offset_top = 17.0
+offset_right = 386.0
+offset_bottom = 75.0
 focus_mode = 0
 icon = ExtResource("10_ioybj")
 flat = true
 
 [node name="btnShoot" type="Button" parent="GameUI/BottomBar" unique_id=235653240]
 layout_mode = 0
-offset_left = 997.0
-offset_top = 10.0
-offset_right = 1100.0
-offset_bottom = 99.0
+offset_left = 976.0
+offset_top = 82.0
+offset_right = 1094.0
+offset_bottom = 182.0
+rotation = -1.2873217
+scale = Vector2(0.8730952, 0.9721067)
 focus_mode = 0
-icon = ExtResource("13_v4do5")
+icon = ExtResource("14_hpup7")
 flat = true
 expand_icon = true
 
 [node name="btnExit" parent="GameUI/BottomBar" unique_id=1633606001 instance=ExtResource("14_b47np")]
 layout_mode = 0
-offset_left = 1074.0
-offset_top = -535.0
-offset_right = 1147.0
-offset_bottom = -481.0
-text = "Exit"
+offset_left = 1068.0
+offset_top = -487.0
+offset_right = 1143.0
+offset_bottom = -455.0
+theme_override_colors/font_color = Color(0.76862746, 0.6666667, 0.60784316, 1)
+theme_override_fonts/font = ExtResource("16_p2qnq")
+theme_override_font_sizes/font_size = 18
+text = "EXIT"
 
 [node name="AlertLabel" type="Label" parent="GameUI/BottomBar" unique_id=1518313051]
 visible = false
@@ -253,6 +344,47 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("4_fjdxc")
 text = "Alert"
+
+[node name="AnimationFallIdle" type="AnimatedSprite2D" parent="GameUI" unique_id=1929238186]
+position = Vector2(75, 57.500004)
+scale = Vector2(0.2, 0.18555555)
+sprite_frames = SubResource("SpriteFrames_u1tks")
+animation = &"Idle101"
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1354707755]
+position = Vector2(1138, 11)
+
+[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=481232086]
+z_index = -2
+offset_left = -1151.0
+offset_top = -11.0
+offset_right = -1124.0
+offset_bottom = 588.0
+color = Color(0.13725491, 0.12941177, 0.14509805, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Node2D" unique_id=385608738]
+z_index = -2
+offset_right = 18.0
+offset_bottom = 599.0
+color = Color(0.13725491, 0.12941177, 0.14509805, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Node2D" unique_id=56917729]
+z_index = -2
+offset_left = -1148.2844
+offset_top = 2.1985626
+offset_right = -1130.0858
+offset_bottom = 1167.2297
+rotation = -1.5707964
+color = Color(0.13725491, 0.12941177, 0.14509805, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Node2D" unique_id=131248023]
+z_index = -2
+offset_left = -1153.451
+offset_top = 642.0
+offset_right = -1094.0459
+offset_bottom = 1814.4822
+rotation = -1.5707964
+color = Color(0.13725491, 0.12941177, 0.14509805, 1)
 
 [connection signal="pressed" from="GameUI/TopBar/btnSave" to="." method="_on_btn_save_pressed"]
 [connection signal="pressed" from="GameUI/TopBar/btnSound" to="." method="_on_btn_sound_pressed"]

@@ -1,67 +1,58 @@
 [gd_scene format=3 uid="uid://b48s52q3f64kl"]
 
 [ext_resource type="PackedScene" uid="uid://d27bcsmx82vfa" path="res://Scenes/Actors/enemy.tscn" id="1_a4af2"]
-[ext_resource type="Texture2D" uid="uid://bgo8qsi7vlfr1" path="res://Assets/Spritesheet/Mushroom-Run.png" id="2_2oid6"]
 [ext_resource type="Script" uid="uid://bx5lotsye1r4s" path="res://Scenes/Actors/monster_small.gd" id="2_tyn28"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_na032"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(0, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cy5wp"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(80, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aldu0"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(160, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5jiam"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(240, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_se70e"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(320, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fblqy"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(400, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k3ucb"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(480, 22, 80, 42)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x2ha1"]
-atlas = ExtResource("2_2oid6")
-region = Rect2(560, 22, 80, 42)
+[ext_resource type="Texture2D" uid="uid://cmsxrk32bkrgt" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_000.png" id="3_8g5y5"]
+[ext_resource type="Texture2D" uid="uid://d6teqlyk5onu" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_001.png" id="4_qs8ce"]
+[ext_resource type="Texture2D" uid="uid://cyoivi7r2cq1f" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_002.png" id="5_oxm22"]
+[ext_resource type="Texture2D" uid="uid://bhek3qma84is7" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_003.png" id="6_lgsx7"]
+[ext_resource type="Texture2D" uid="uid://g3k8ah5ycomi" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_004.png" id="7_1pjpm"]
+[ext_resource type="Texture2D" uid="uid://b4gp6w58th66f" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_005.png" id="8_5x8hn"]
+[ext_resource type="Texture2D" uid="uid://dg8i05hj2f11k" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_006.png" id="9_d1iqb"]
+[ext_resource type="Texture2D" uid="uid://dw2q4wblonbq8" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_007.png" id="10_qnyj8"]
+[ext_resource type="Texture2D" uid="uid://h4euamvthbk7" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_008.png" id="11_3pdfo"]
+[ext_resource type="Texture2D" uid="uid://dtklwxgyyrht8" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_009.png" id="12_po8nb"]
+[ext_resource type="Texture2D" uid="uid://doh47g1jqj6td" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_010.png" id="13_83gpq"]
+[ext_resource type="Texture2D" uid="uid://ikd2xw0d5q7g" path="res://Assets/Spritesheet/waithh/Wraith_03_Moving Forward_011.png" id="14_ge180"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_l7ctk"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_na032")
+"texture": ExtResource("3_8g5y5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cy5wp")
+"texture": ExtResource("4_qs8ce")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_aldu0")
+"texture": ExtResource("5_oxm22")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_5jiam")
+"texture": ExtResource("6_lgsx7")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_se70e")
+"texture": ExtResource("7_1pjpm")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fblqy")
+"texture": ExtResource("8_5x8hn")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k3ucb")
+"texture": ExtResource("9_d1iqb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_x2ha1")
+"texture": ExtResource("10_qnyj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_3pdfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_po8nb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_83gpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ge180")
 }],
 "loop": 1,
 "name": &"mushroom",
@@ -80,7 +71,7 @@ position = Vector2(0, -33)
 scale = Vector2(1.5, 1.5)
 
 [node name="AnimateSprite" type="AnimatedSprite2D" parent="Sprite" parent_id_path=PackedInt32Array(1445111960) index="0" unique_id=87960724]
-position = Vector2(0, -42)
-scale = Vector2(2, 2)
+position = Vector2(-2, -24)
+scale = Vector2(-0.263, 0.255)
 sprite_frames = SubResource("SpriteFrames_l7ctk")
 animation = &"mushroom"

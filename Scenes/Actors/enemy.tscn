@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d27bcsmx82vfa"]
 
 [ext_resource type="Script" uid="uid://cqthh7s5qpuw3" path="res://Scenes/Actors/enemy.gd" id="1_7cwx2"]
-[ext_resource type="AudioStream" uid="uid://wg4mya74ni6n" path="res://Assets/Sound/FX/explosion.wav" id="2_5n1qu"]
+[ext_resource type="AudioStream" uid="uid://cvqx1vyvgsgkv" path="res://Assets/Sound/FX/mixkit-falling-hit-on-gravel-756.wav" id="2_7cwx2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21vrd"]
 radius = 17.0
@@ -83,7 +83,7 @@ position = Vector2(-24, -16)
 target_position = Vector2(0, 23)
 
 [node name="DeathSfx" type="AudioStreamPlayer" parent="." unique_id=1907249660]
-stream = ExtResource("2_5n1qu")
+stream = ExtResource("2_7cwx2")
 volume_db = -3.0
 bus = &"sfx"
 

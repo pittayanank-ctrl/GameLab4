@@ -4,7 +4,7 @@ extends Node2D
 
 var score : int = 0
 var hp    : int = 100
-var life  : int = 4
+var life  : int = 5
 var max_life : int = 5
 var max_hp  :int = 100
 
@@ -27,10 +27,10 @@ func load_next_level(next_scene : PackedScene):
 func restart():
 	score = 0
 	hp = 100
-	life = 4
+	life = 5
+	delete_save_game()
 	save_player_position = Vector2.ZERO
-	get_tree().change_scene_to_file("res://Scenes/Levels/level_01.tscn")
-
+	get_tree().change_scene_to_file("res://Scenes/Levels/Level_01.tscn")
 
 func damage(val=1):
 	hp = hp - val
@@ -55,6 +55,7 @@ func death():
 	if player != null:
 		await player.death_tween()
 	life -= 1
+	hp = 100
 	if life <= 0:
 		get_tree().change_scene_to_file("res://Scenes/Levels/game_over.tscn")	
 
@@ -94,6 +95,12 @@ func save_game():
 		file.store_pascal_string(json_text)
 		file.close()
 
+func delete_save_game():
+	if FileAccess.file_exists(save_path):
+		DirAccess.remove_absolute(save_path)
+
+	save_player_position = Vector2.ZERO
+
 func has_gamesaved():
 	return FileAccess.file_exists(save_path)
 
@@ -105,7 +112,7 @@ func load_game():
 		file.close()
 		current_level = data.get("current_level", current_level)
 		score = data.get("score", score)
-		life = data.get("life", 4)
+		life = data.get("life", 5)
 		var pos = data.get("player",[0,0])
 		save_player_position = Vector2(pos[0],pos[1])
 		get_tree().change_scene_to_file(current_level)

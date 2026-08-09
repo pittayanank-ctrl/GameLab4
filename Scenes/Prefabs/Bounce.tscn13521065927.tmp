@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://4rpe8viiom48"]
+
+[ext_resource type="Script" uid="uid://cw52l24pm4by5" path="res://Scenes/Prefabs/bounce.gd" id="1_y38u1"]
+[ext_resource type="Texture2D" uid="uid://37r7n3x83sbr" path="res://Assets/Spritesheet/tempoline123124.png" id="2_mospu"]
+
+[sub_resource type="Animation" id="Animation_ag3by"]
+resource_name = "Bounce"
+length = 0.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D/Tempoline123124:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.1, 0.1), Vector2(0.1, 0.05)]
+}
+
+[sub_resource type="Animation" id="Animation_6lt2c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Area2D/Tempoline123124:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.1, 0.05)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fdu4n"]
+_data = {
+&"Bounce": SubResource("Animation_ag3by"),
+&"RESET": SubResource("Animation_6lt2c")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_npl5c"]
+size = Vector2(72, 14)
+
+[node name="Bounce" type="Node2D" unique_id=1492787120]
+script = ExtResource("1_y38u1")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=744753867]
+
+[node name="Tempoline123124" type="Sprite2D" parent="Area2D" unique_id=1694616901]
+position = Vector2(0, 36.999996)
+scale = Vector2(0.1, 0.05)
+texture = ExtResource("2_mospu")
+offset = Vector2(0, -409.99997)
+region_enabled = true
+region_rect = Rect2(259.58264, 196.3547, 736.10535, 898.10986)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D/Tempoline123124" unique_id=1053932335]
+root_node = NodePath("../../..")
+libraries/ = SubResource("AnimationLibrary_fdu4n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2122437409]
+position = Vector2(0, -41)
+shape = SubResource("RectangleShape2D_npl5c")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

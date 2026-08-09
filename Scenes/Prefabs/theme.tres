@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://b3ivysmhcn84h" path="res://Assets/Fonts/Kodchasan-Bold.ttf" id="1_f1dvb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o03jo"]
-bg_color = Color(0.061845228, 0.5386302, 6.738305e-07, 1)
+bg_color = Color(0.2509804, 0.47058824, 0.007843138, 1)
 
 [resource]
 default_font = ExtResource("1_f1dvb")

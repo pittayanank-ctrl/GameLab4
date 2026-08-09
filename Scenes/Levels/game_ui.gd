@@ -3,6 +3,10 @@ extends CanvasLayer
 @onready var score_label = %ScoreLabel
 @onready var hp_bar = %ProgressBar
 @onready var alert_label: Label = $GameUI/BottomBar/AlertLabel
+@onready var animateplayui = $GameUI/AnimationFallIdle
+
+func _ready() -> void:
+	animateplayui.play("Idle101")
 
 func _process(_delta):
 	# Set the score label text to the score variable in game maanger script

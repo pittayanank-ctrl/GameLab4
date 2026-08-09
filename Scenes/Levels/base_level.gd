@@ -13,11 +13,10 @@ func _ready() -> void:
 
 
 func _on_player_hit_enemy() -> void:
-	GameManager.damage(5)	
+	GameManager.damage(20)	
 
 func _on_player_hit_trap() -> void:
-	GameManager.death()
-
+	pass
 
 func _on_music_player_finished() -> void:
 	$MusicPlayer.play(0)

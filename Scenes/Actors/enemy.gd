@@ -1,10 +1,10 @@
 class_name Enemy
 extends CharacterBody2D
-@export var speed = 100.0
+@export var speed = 150.0
 @export var direction = 1
 @export var flip = false
 
-var alive = true
+var alive = true	
 @onready var wall_ray: RayCast2D = $Sprite/Ray/wallRay
 @onready var player_ray: RayCast2D = $Sprite/Ray/playerRay
 @onready var floor_ray: RayCast2D = $Sprite/Ray/floorRay
@@ -15,7 +15,7 @@ func _ready() -> void:
 	if direction>0 : direction = 1
 	if direction<0 : direction = -1
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if flip : $Sprite.scale.x = -1
 	else: $Sprite.scale.x = 1
 

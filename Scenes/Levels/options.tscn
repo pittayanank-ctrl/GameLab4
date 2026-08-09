@@ -1,7 +1,13 @@
 [gd_scene format=3 uid="uid://cuq7vusmo7y5g"]
 
 [ext_resource type="PackedScene" uid="uid://puc4l62gx6et" path="res://Scenes/Prefabs/button_exit.tscn" id="1_6oxap"]
+[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="2_fn3kp"]
 [ext_resource type="Theme" uid="uid://d3eng5cvycmjf" path="res://Scenes/Prefabs/theme.tres" id="2_wto1r"]
+[ext_resource type="Texture2D" uid="uid://cs1oni1pc2jyl" path="res://Assets/Icons/Ashblock.png" id="3_40avk"]
+[ext_resource type="Texture2D" uid="uid://ckxw8g8wltj44" path="res://Assets/BG/Ocean_5/1.png" id="4_fn3kp"]
+[ext_resource type="Texture2D" uid="uid://d0tl413mqi1od" path="res://Assets/BG/Ocean_5/2.png" id="5_40avk"]
+[ext_resource type="Texture2D" uid="uid://bhc0rbjlwn68" path="res://Assets/BG/Ocean_5/3.png" id="6_rtepo"]
+[ext_resource type="Texture2D" uid="uid://pkwmfu4rf8ng" path="res://Assets/BG/Ocean_5/4.png" id="7_s2udg"]
 
 [node name="Node2D" type="Node2D" unique_id=1481218610]
 
@@ -10,6 +16,13 @@ offset_left = 48.0
 offset_top = 32.0
 offset_right = 174.0
 offset_bottom = 86.0
+theme_override_fonts/font = ExtResource("2_fn3kp")
+
+[node name="Ashblock" type="Sprite2D" parent="btnExit" unique_id=941471265]
+z_index = -1
+position = Vector2(63, 25.000008)
+scale = Vector2(0.18730329, 0.15913205)
+texture = ExtResource("3_40avk")
 
 [node name="Title" type="Label" parent="." unique_id=714304452]
 offset_left = 412.0
@@ -22,3 +35,46 @@ theme_override_font_sizes/font_size = 24
 text = "Game Options"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="BgParalax" type="Node2D" parent="." unique_id=939890644]
+z_index = -1
+
+[node name="1" type="Sprite2D" parent="BgParalax" unique_id=1325075747]
+z_index = -1
+position = Vector2(596, 312.00003)
+scale = Vector2(2.1979167, 2.169753)
+texture = ExtResource("4_fn3kp")
+
+[node name="Parallax2D" type="Parallax2D" parent="BgParalax" unique_id=140397471]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-10, 0)
+repeat_times = 2
+ignore_camera_scroll = true
+
+[node name="2" type="Sprite2D" parent="BgParalax/Parallax2D" unique_id=921191811]
+z_index = -1
+position = Vector2(597.9999, 308)
+scale = Vector2(2.1909719, 2.1790125)
+texture = ExtResource("5_40avk")
+
+[node name="Parallax2D2" type="Parallax2D" parent="BgParalax" unique_id=355913985]
+repeat_size = Vector2(1259, 0)
+autoscroll = Vector2(-14, 0)
+repeat_times = 2
+
+[node name="3" type="Sprite2D" parent="BgParalax/Parallax2D2" unique_id=473049990]
+z_index = -1
+position = Vector2(594, 301)
+scale = Vector2(2.1857638, 2.373457)
+texture = ExtResource("6_rtepo")
+
+[node name="Parallax2D3" type="Parallax2D" parent="BgParalax" unique_id=274327928]
+repeat_size = Vector2(1265, 0)
+autoscroll = Vector2(-24, 0)
+repeat_times = 2
+
+[node name="4" type="Sprite2D" parent="BgParalax/Parallax2D3" unique_id=946212742]
+z_index = -1
+position = Vector2(594.99994, 316)
+scale = Vector2(2.2013888, 2.1790123)
+texture = ExtResource("7_s2udg")

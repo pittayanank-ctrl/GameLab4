@@ -88,3 +88,7 @@ Shoot={
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemy"
 2d_physics/layer_4="item"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
