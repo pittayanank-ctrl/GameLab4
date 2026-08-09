@@ -18,7 +18,7 @@ This starter kit provides all the essential mechanics needed to build a complete
 
 <img src="docs/qrcode.png" style="width:300px;" />
 
-- [Game Preview](https://twachi.github.io/2D-Platformer-Starter-Kit/)
+- [Game Preview](https://pittayanank-ctrl.github.io/game-dev-2026-project/Lab4/GameLab4.html)
 
 
 ## Features
