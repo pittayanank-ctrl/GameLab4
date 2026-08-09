@@ -1,3 +1,15 @@
+# GameLab4
+
+รหัสนักศึกษา: 673380525-8 ชื่อ-สกุล: พิทยนันท์ กัญญะลา
+
+# Game Story
+
+ในโลกที่เคยเต็มไปด้วยความสงบสุข มีตำนานเล่าขานถึง “Ashwing” พลังลึกลับที่สามารถปกป้องโลกจากเหล่าปีศาจได้
+แต่วันหนึ่ง ความมืดได้กลับมาอีกครั้ง
+หมู่บ้านต่าง ๆ ถูกปีศาจเข้ายึดครอง ผู้คนต้องหลบหนีจากบ้านเกิด ขณะที่ป่าซึ่งเคยเต็มไปด้วยชีวิตกลับกลายเป็น ป่าต้องสาป และเต็มไปด้วยสิ่งมีชีวิตอันตราย
+ผู้เล่นรับบทเป็นนักรบผู้มีพลังของ Ashen Wings ผู้ตื่นขึ้นมาโดยไม่รู้ว่าตัวเองเป็นใคร และเหตุใดจึงสามารถใช้พลังลึกลับนี้ได้
+การเดินทางเริ่มต้นขึ้นจาก หมู่บ้านริมทะเล ก่อนจะนำไปสู่สถานที่ที่อันตรายมากขึ้นเรื่อย ๆ
+
 # 2D Platformer Starter Kit
 
 This starter kit provides all the essential mechanics needed to build a complete 2D platformer game in Godot 4.7. It is designed as a hands-on learning resource for students taking the **Computer Game Development** course at the **College of Computing, Khon Kaen University**.
@@ -8,7 +20,7 @@ This starter kit provides all the essential mechanics needed to build a complete
 <img src="docs/demo1.jpg" style="width:600px;" />
 <img src="docs/qrcode.png" style="width:300px;" />
 
-- [Game Preview](https://twachi.github.io/2D-Platformer-Starter-Kit/)
+- [Game Preview](https://pittayanank-ctrl.github.io/game-dev-2026-project/Lab4/GameLab4.html)
 
 
 ## Features
