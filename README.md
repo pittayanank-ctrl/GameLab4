@@ -21,7 +21,7 @@ This starter kit provides all the essential mechanics needed to build a complete
 <img src="docs/qrcode.png" style="width:300px;" />
 
 - [Game Preview](https://pittayanank-ctrl.github.io/game-dev-2026-project/Lab4/GameLab4.html)
-
+- [Video Preview](https://drive.google.com/file/d/1-3XL0OLr6tCDOHSgrIDXb-qeP-jdouPX/view?usp=sharing)
 
 ## Features
 
