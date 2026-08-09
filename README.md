@@ -1,4 +1,4 @@
-# GameLab4
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/98f5d9e7-ed02-4a32-b11a-0fb74c0b04e8" /># GameLab4
 
 รหัสนักศึกษา: 673380525-8 ชื่อ-สกุล: พิทยนันท์ กัญญะลา
 
