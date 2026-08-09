@@ -15,9 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://6dgg3sh5m7t7" path="res://Assets/BG/Ocean_1/1.png" id="11_5pmb1"]
 [ext_resource type="Texture2D" uid="uid://c01hgxdiwqxrn" path="res://Assets/BG/Ocean_1/2.png" id="12_xpj05"]
 [ext_resource type="Texture2D" uid="uid://b52my0xr44f1a" path="res://Assets/BG/Ocean_1/3.png" id="13_i7ntp"]
-[ext_resource type="FontFile" uid="uid://qgc4vi5osk7v" path="res://Assets/Fonts/Star Choco.ttf" id="15_i7ntp"]
 [ext_resource type="FontFile" uid="uid://b3ivysmhcn84h" path="res://Assets/Fonts/Kodchasan-Bold.ttf" id="15_siisw"]
-[ext_resource type="AudioStream" uid="uid://c418ddvnkmpj6" path="res://Assets/Sound/freecompress-alex-morgan-game-level-pixel-quest-loop-578505.mp3" id="18_s0ca6"]
 
 [node name="BaseLevel" unique_id=1997201631 instance=ExtResource("1_l0dwn")]
 
@@ -199,7 +197,7 @@ offset_top = 103.0
 offset_right = -596.0
 offset_bottom = 232.0
 theme = ExtResource("6_taws2")
-theme_override_fonts/font = ExtResource("15_i7ntp")
+theme_override_fonts/font = ExtResource("15_siisw")
 text = "นี่เป็นด่านตัวอย่าง
 A D เพื่อเดิน
 Space กระโดด
@@ -213,6 +211,3 @@ offset_right = 4.0
 offset_bottom = 265.0
 theme = ExtResource("6_taws2")
 text = "กระโดดข้ามเครื่องบด"
-
-[node name="MusicPlayer" parent="." index="7" unique_id=724032201]
-stream = ExtResource("18_s0ca6")
